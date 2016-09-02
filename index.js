@@ -561,7 +561,7 @@ module.exports = buf => {
       }
     }
     skip(32);
-    if (chord.notes.length > 0) beat.chord = chord;
+    if (Array.isArray(chord.notes) && chord.notes.length > 0) beat.chord = chord;
   }
 
   const readDuration = (flags) => {
