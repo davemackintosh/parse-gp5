@@ -718,7 +718,3 @@ module.exports = buf => {
     tracks
   };
 };
-
-if (!module.parent) {
-  console.log(JSON.stringify(module.exports(require('fs').readFileSync(`${process.env.HOME}/Desktop/fekdich.gp5`)), null, '  '));
-}
